@@ -1,48 +1,56 @@
 <div id="hab" class="habilidades container-fluid">     
     <h2 class="titulo-div">Habilidades</h2>
 
-    <div class="container-fluid" >
-      <div class="row">
-        <p class="col-2" style="text-align:right;"> Inglés </p>
+    <div *ngFor="let habilidades of habilidadesList " class="container-fluid" >
+      
+      <div  class="row">
+        <p class="col-2" style="text-align:right;"> {{habilidades.habilidad}}</p>
+        <div class="progress col-10">
+          <div class="progress-bar" role="progressbar" style="width:{{habilidades.porcenta}}%" 
+          aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">{{habilidades.porcenta}}%</div>
+        </div>
+      </div>
+     <!-- <p><ngb-progressbar type="success" textType="white" [value]="25" [showValue]="true"></ngb-progressbar></p>
+      <p><ngb-progressbar type="dark" textType="white" [value]="50" [showValue]="true"></ngb-progressbar></p>
+      <p><ngb-progressbar type="light" textType="success" [value]="75" [showValue]="true"></ngb-progressbar></p>
+      <p><ngb-progressbar type="warning" textType="dark" [value]="100" [showValue]="true"></ngb-progressbar></p>
+
+
+        
+        <div class="row" >
+          <p class="col-2" style="text-align:right;"> CSS</p>
+          <div class="progress col-10">
+            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <p class="col-2" style="text-align:right;"> HTLM5 </p>
+          <div class="progress col-10">
+            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <p class="col-2" style="text-align:right;"> JScript </p>
+          <div class="progress col-10">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+        </div>
+
+        <div class="row">
+        <p class="col-2" style="text-align:right;"> POO</p>
         <div class="progress col-10">
           <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
         </div>
-      </div>
-    
-    <div class="row" >
-      <p class="col-2" style="text-align:right;"> CSS</p>
-      <div class="progress col-10">
-        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-      </div>
-    </div>
-  
-    <div class="row">
-      <p class="col-2" style="text-align:right;"> HTLM5 </p>
-      <div class="progress col-10">
-        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-      </div>
-    </div>
+        </div>
 
-    <div class="row">
-      <p class="col-2" style="text-align:right;"> JScript </p>
-      <div class="progress col-10">
-        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-      </div>
-    </div>
-
-    <div class="row">
-    <p class="col-2" style="text-align:right;"> POO</p>
-    <div class="progress col-10">
-      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-    </div>
-    </div>
-
-    <div class="row">
-      <p class="col-2" style="text-align:right;"> Redes </p>
-      <div class="progress col-10">
-        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-      </div>
-    </div>
-  </div>
+        <div class="row">
+          <p class="col-2" style="text-align:right;"> Redes </p>
+          <div class="progress col-10">
+            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div> -->
+  </div> 
   
   </div>

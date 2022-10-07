@@ -12,6 +12,9 @@ import { TrabajosComponent } from './componentes/trabajos/trabajos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { CopyComponent } from './componentes/copy/copy.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EducBaseComponent } from './componentes/educ-base/educ-base.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,12 +25,14 @@ import { HttpClientModule } from '@angular/common/http';
     HabilidadesComponent,
     TrabajosComponent,
     FooterComponent,
-    CopyComponent
-  ],
+    CopyComponent,
+    EducBaseComponent
+     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
