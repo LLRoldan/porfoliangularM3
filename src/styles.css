@@ -79,7 +79,11 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
+  .titulo-parte{
+    justify-content:space-between ;
+    display: flex;
+  }
   .navegador{
     display: flex;
    

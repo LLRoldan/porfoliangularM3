@@ -18,3 +18,4 @@ obtenerDatos(){console.log("El servicio profolio se esta ejecuntando")}
     return this.http.get('/assets/data/data.json ');
     } 
 }
+//aca se trabaja con aPi

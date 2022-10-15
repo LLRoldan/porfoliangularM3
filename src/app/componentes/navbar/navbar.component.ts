@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  elementosEdicion = false;
+  showData() {
+    return (this.elementosEdicion = true);
+  }
 
   constructor() { }
 

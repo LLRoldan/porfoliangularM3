@@ -5,21 +5,22 @@
   </div>
     
    
-      <fa-icon [icon]="pencilIcon"></fa-icon>
-
-      <button type="button" class="btn btn-primary btn-sm" onclik="cambiar_parrafo">Editar</button>
+      <!--<button type="button" class="btn btn-primary btn-sm" onclik="cambiar_parrafo">Editar</button>
       <input id="edit-encabezado" oninput="myfunction2(this.value)" 
       style ="display:none" type="text">
+      <div id="textoprueba">zzxcxcz</div>-->
 
-      <div id="textoprueba">zzxcxcz</div>
-
+     
 
       <article class="descripcion" style="padding-left: 16px;">
-       <h1 id="nombreporfolio">
-        {{miPorfolio.nombrePersona}}</h1>
+        <div class="titulo-parte">
+              <h1 id="nombreporfolio">{{miPorfolio.nombrePersona}}</h1>
+              <app-botoneditar></app-botoneditar>    
+        </div>
+     
        <h3>{{miPorfolio.titulo}}</h3>
       
-        <div class="row">
+        <div  class="row">
           <div class="col-xs-1 col-md-4 col-sm-12">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">{{miPorfolio.expertoEn.primero}}</li>

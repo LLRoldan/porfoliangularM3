@@ -13,6 +13,8 @@ export class HabilidadesComponent implements OnInit {
   miPorfolio:any;
   pencilIcon = faPen;
   habilidadesList:any;
+
+  
   constructor(private datosPorfolio:PorfolioService ) { }
 
   ngOnInit(): void{
